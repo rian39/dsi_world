@@ -1,3 +1,0 @@
-- get Abbot's _Chaos of the Disciplines_ and see if relevant
-- get Thrift's _Knowing Capitalism_ and check main argument
-- read Leydesdorff and makes notes on main argument

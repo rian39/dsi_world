@@ -1,0 +1,333 @@
+*Some Comments on Donaho=E2=80=99s =E2=80=9C50 Years of Data Science=E2=80=
+=9D*
+<http://www.r-bloggers.com/some-comments-on-donahos-50-years-of-data-scienc=
+e/>
+// *R-bloggers*
+<http://www.r-bloggers.com/some-comments-on-donahos-50-years-of-data-scienc=
+e/>
+
+(This article was first published on *Mad (Data) Scientist*
+<https://matloff.wordpress.com/2016/01/23/some-comments-on-donahos-50-years=
+-of-data-science/>,
+and kindly contributed to R-bloggers) <http://www.r-bloggers.com/>
+
+An old friend recently called my attention to a thoughtful essay by
+Stanford statistics professor David Donaho, titled =E2=80=9C50 Years of Dat=
+a
+Science.=E2=80=9D
+<http://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf>
+Given the keen interest these days in data science, the essay is quite
+timely. The work clearly shows that Donaho is not only a grandmaster
+theoretician, but also a statistical philosopher. The paper should be
+required reading in all Stat and CS Departments. But as a CS person with
+deep roots in statistics, I believe there are a few points Donaho should
+have developed more, which I will discuss here, as well as other points on
+which his essay really shines.
+
+Though no one seems to claim to know what data science is =E2=80=94 not eve=
+n on an
+=E2=80=9CI know it when I see it=E2=80=9D basis =E2=80=94 everyone seems to=
+ agree that it is
+roughly a combination of statistics and computer science. Fine, but what
+does that mean? Let=E2=80=99s take the computer science aspect first.
+
+By CS here, I mean facility with computers, and by that in turn I mean more
+than programming. By happenstance, I was in a conversation today with some
+CS colleagues as to whether material on computer networks should be
+required for CS majors. One of my colleagues said there were equally
+deserving topics, such as Hadoop. My reply was that Hadoop is SLOW (so much
+so that many are predicting its imminent demise), and maximizing its
+performance involves, *inter alia*, an understanding of=E2=80=A6computer ne=
+tworks.
+Donaho doesn=E2=80=99t cover this point about computation (nor, it seems, d=
+o most
+data science curricula), limiting himself to programming languages and
+libraries.
+
+But he does a fine job on the latter. I was pleased that his essay contains
+quite a bit of material on R, such as the work of Yihui Xie and Hadley
+Wickham. That a top theoretician devotes so much space in a major position
+paper to R is a fine tribute to the status R has attained in this
+profession.
+
+(In that context, I feel compelled to note that in attending a talk at Rice
+in 2012 I was delighted to see Manny Parzen, 86 years old and one of the
+pioneers of modern statistical theory, interrupt his theoretical talk with
+a brief exposition on the NINE different definitions of *quantile*
+available in calls to R=E2=80=99s *quantile()* function. Bravo!)
+
+Donahue notes, however, that the Berkeley data science curriculum uses
+Python instead of R. He surmises that this is due to Python handling Big
+Data better than R, but I suspect it has more to do with the CS people at
+UCB being the main ones designing the curriculum, acting on a general
+preference in CS for the =E2=80=9Cmore elegant=E2=80=9D language Python.
+
+But is Python the better tool than R for Big Data? Many would say so, I
+think, but a good case can be made for R. For instance, to my knowledge
+there is nothing in Python like CRAN=E2=80=99s *bigmemory
+<https://cran.r-project.org/web/packages/bigmemory/index.html>* package,
+giving a direct R interface to shared memory at the C++ level. (I also have
+a parallel computation package, *Rdsm
+<https://cran.r-project.org/web/packages/Rdsm/index.html>*, that runs on
+top of *bigmemory*.)
+
+Regretably, the Donaho essay contains only the briefest passing reference
+to parallel computation. But again, he is not alone. Shouldn=E2=80=99t a de=
+gree in
+data science, ostensibly aimed in part at Big Data, include at least some
+knowledge of parallel computation? I haven=E2=80=99t seen any that do. Note=
+,
+though, that coverage of such material would again require some knowledge
+of computer system infrastructure, and thus being at odds with the =E2=80=
+=9Ca
+little of this, a little of that, but nothing in depth=E2=80=9D philosophy =
+taken so
+far in data science curricula.
+
+One topic I was surprised to see the essay omit was the fact that so much
+data today is not in the nice =E2=80=9Crectangular=E2=80=9D =E2=80=94 obser=
+vations in rows,
+variables in equal numbers of columns =E2=80=94 form that most methodology =
+assumes.
+Ironically, Donaho highlights Hadley Wickham=E2=80=99s *plyr* package, as
+rectangular as can be. Arguably, data science students ought to be exposed
+more to sophisticated use of R=E2=80=99s *tapply()*, for instance.
+
+Now turning to the stat aspect of Data Science, a key theme in the essay
+is, to borrow from Marie Davidian, aren=E2=80=99t WE (statistics people) Da=
+ta
+Science? Donaho does an excellent job here of saying the answer is Yes (or
+if not completely Yes, close enough so that the answer could be Yes with a
+little work). I particularly liked this gem:
+
+It is striking how, when I review a presentation on today=E2=80=99s data sc=
+ience,
+in which statistics is superficially given pretty short shrift, I can=E2=80=
+=99t
+avoid noticing that the underlying tools, examples, and ideas which are
+being taught as data science were all literally invented by someone trained
+in Ph.D. statistics, and in many cases the actual software being used was
+developed by someone with an MA or Ph.D. in statistics. The accumulated
+efforts of statisticians over centuries are just too overwhelming to be
+papered over completely, and can=E2=80=99t be hidden in the teaching, resea=
+rch, and
+exercise of Data Science.
+
+Yes! Not only does it succinctly show that there is indeed value to theory,
+but also it illustrates that point that many statisticians are not computer
+wimps after all. Who needs data science?
+
+I believe that Donaho, citing Leo Breiman, is too quick to concede the
+prediction field to Machine Learning. As we all know, prediction has been
+part of Statistics since its inception, literally for centuries. Granted,
+modern math stat has an exquisitely developed theory of estimation, but I
+have seen too many Machine Learning people make the absurd statement, =E2=
+=80=9CML
+is different from statistics, because we do prediction.=E2=80=9D
+
+Indeed, one of Donaho=E2=80=99s most salient points is that having MORE met=
+hods
+available for prediction is not the same as doing BETTER prediction.
+Indeed, he shows the results of some experiments he conducted with Jiashun
+Jin on some standard real data sets, in which a very simple predictor is
+compared to various =E2=80=9Cfancy=E2=80=9D ones:
+
+Boosting, Random Forests and so on are dramatically more complex and have
+correspondingly higher charisma in the Machine Learning community. But
+against a series of pre-existing benchmarks developed in the Machine
+Learning community, the charismatic methods do not outperform the homeliest
+of procedures=E2=80=A6
+
+This would certainly be a shock to most students in ML courses =E2=80=94 an=
+d to
+some of their instructors.
+
+Maybe the =E2=80=9CR people=E2=80=9D (i.e. Stat Departments) have as much t=
+o contribute to
+data science as the =E2=80=9CPython people=E2=80=9D (CS) after all.
+
+To *leave a comment* for the author, please follow the link and comment on
+their blog: *Mad (Data) Scientist*
+<https://matloff.wordpress.com/2016/01/23/some-comments-on-donahos-50-years=
+-of-data-science/>
+.
+
+R-bloggers.com <http://www.r-bloggers.com/> offers *daily e-mail updates*
+<http://feedburner.google.com/fb/a/mailverify?uri=3DRBloggers> about R
+<http://www.r-project.org/> news and tutorials
+<http://www.r-bloggers.com/?s=3Dtutorial> on topics such as: Data science
+<http://www.r-bloggers.com/?s=3Ddata%20science>, Big Data,
+<http://www.r-bloggers.com/?s=3DBig%20Data>R jobs <http://www.r-users.com/>=
+,
+visualization (ggplot2 <http://www.r-bloggers.com/?s=3Dggplot2>, Boxplots
+<http://www.r-bloggers.com/?s=3Dboxplot>, maps
+<http://www.r-bloggers.com/?s=3Dmap>, animation
+<http://www.r-bloggers.com/?s=3Danimation>), programming (RStudio
+<http://www.r-bloggers.com/?s=3DRStudio>, Sweave
+<http://www.r-bloggers.com/?s=3Dsweave>, LaTeX
+<http://www.r-bloggers.com/?s=3DLaTeX>, SQL <http://www.r-bloggers.com/?s=
+=3DSQL>,
+Eclipse <http://www.r-bloggers.com/?s=3Declipse>, git
+<http://www.r-bloggers.com/?s=3Dgit>, hadoop
+<http://www.r-bloggers.com/?s=3Dhadoop>, Web Scraping
+<http://www.r-bloggers.com/?s=3DWeb+Scraping>) statistics (regression
+<http://www.r-bloggers.com/?s=3Dregression>, PCA
+<http://www.r-bloggers.com/?s=3DPCA>, time series
+<http://www.r-bloggers.com/?s=3Dtime+series>, trading
+<http://www.r-bloggers.com/?s=3Dtrading>) and more...
+
+----
+
+Shared via *my feedly reader* <http://feedly.com>
+
+--047d7b2e0f25baeb27052a1a70f7
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><p=
+ dir=3D"ltr"></p>
+<p dir=3D"ltr">---- <br>
+<a href=3D"http://www.r-bloggers.com/some-comments-on-donahos-50-years-of-d=
+ata-science/"><b>Some Comments on Donaho=E2=80=99s =E2=80=9C50 Years of Dat=
+a Science=E2=80=9D</b></a><br>
+// <a href=3D"http://www.r-bloggers.com/some-comments-on-donahos-50-years-o=
+f-data-science/"><b>R-bloggers</b></a></p>
+<p dir=3D"ltr">(This article was first published on <a href=3D"https://matl=
+off.wordpress.com/2016/01/23/some-comments-on-donahos-50-years-of-data-scie=
+nce/"><b>Mad (Data) Scientist</b></a>, and kindly contributed to <a href=3D=
+"http://www.r-bloggers.com/">R-bloggers)</a> </p>
+<p dir=3D"ltr">An old friend recently called my attention to a thoughtful e=
+ssay by Stanford statistics professor David Donaho, titled <a href=3D"http:=
+//courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf">=E2=80=9C5=
+0 Years of Data Science.=E2=80=9D</a> Given the keen interest these days in=
+ data science, the essay is quite timely. The work clearly shows that Donah=
+o is not only a grandmaster theoretician, but also a statistical philosophe=
+r. The paper should be required reading in all Stat and CS Departments. But=
+ as a CS person with deep roots in statistics, I believe there are a few po=
+ints Donaho should have developed more, which I will discuss here, as well =
+as other points on which his essay really shines.</p>
+<p dir=3D"ltr">Though no one seems to claim to know what data science is =
+=E2=80=94 not even on an =E2=80=9CI know it when I see it=E2=80=9D basis =
+=E2=80=94 everyone seems to agree that it is roughly a combination of stati=
+stics and computer science. Fine, but what does that mean? Let=E2=80=99s ta=
+ke the computer science aspect first.</p>
+<p dir=3D"ltr">By CS here, I mean facility with computers, and by that in t=
+urn I mean more than programming. By happenstance, I was in a conversation =
+today with some CS colleagues as to whether material on computer networks s=
+hould be required for CS majors. One of my colleagues said there were equal=
+ly deserving topics, such as Hadoop. My reply was that Hadoop is SLOW (so m=
+uch so that many are predicting its imminent demise), and maximizing its pe=
+rformance involves, <i>inter alia</i>, an understanding of=E2=80=A6computer=
+ networks. Donaho doesn=E2=80=99t cover this point about computation (nor, =
+it seems, do most data science curricula), limiting himself to programming =
+languages and libraries.</p>
+<p dir=3D"ltr">But he does a fine job on the latter. I was pleased that his=
+ essay contains quite a bit of material on R, such as the work of Yihui Xie=
+ and Hadley Wickham. That a top theoretician devotes so much space in a maj=
+or position paper to R is a fine tribute to the status R has attained in th=
+is profession.</p>
+<p dir=3D"ltr">(In that context, I feel compelled to note that in attending=
+ a talk at Rice in 2012 I was delighted to see Manny Parzen, 86 years old a=
+nd one of the pioneers of modern statistical theory, interrupt his theoreti=
+cal talk with a brief exposition on the NINE different definitions of <i>qu=
+antile</i> available in calls to R=E2=80=99s <b>quantile()</b> function. Br=
+avo!)</p>
+<p dir=3D"ltr">Donahue notes, however, that the Berkeley data science curri=
+culum uses Python instead of R. He surmises that this is due to Python hand=
+ling Big Data better than R, but I suspect it has more to do with the CS pe=
+ople at UCB being the main ones designing the curriculum, acting on a gener=
+al preference in CS for the =E2=80=9Cmore elegant=E2=80=9D language Python.=
+</p>
+<p dir=3D"ltr">But is Python the better tool than R for Big Data? Many woul=
+d say so, I think, but a good case can be made for R. For instance, to my k=
+nowledge there is nothing in Python like CRAN=E2=80=99s <b><a href=3D"https=
+://cran.r-project.org/web/packages/bigmemory/index.html">bigmemory</a></b> =
+package, giving a direct R interface to shared memory at the C&#43;&#43; le=
+vel. (I also have a parallel computation package, <b><a href=3D"https://cra=
+n.r-project.org/web/packages/Rdsm/index.html">Rdsm</a></b>, that runs on to=
+p of <b>bigmemory</b>.)</p>
+<p dir=3D"ltr">Regretably, the Donaho essay contains only the briefest pass=
+ing reference to parallel computation. But again, he is not alone. Shouldn=
+=E2=80=99t a degree in data science, ostensibly aimed in part at Big Data, =
+include at least some knowledge of parallel computation? I haven=E2=80=99t =
+seen any that do. Note, though, that coverage of such material would again =
+require some knowledge of computer system infrastructure, and thus being at=
+ odds with the =E2=80=9Ca little of this, a little of that, but nothing in =
+depth=E2=80=9D philosophy taken so far in data science curricula.</p>
+<p dir=3D"ltr">One topic I was surprised to see the essay omit was the fact=
+ that so much data today is not in the nice =E2=80=9Crectangular=E2=80=9D =
+=E2=80=94 observations in rows, variables in equal numbers of columns =E2=
+=80=94 form that most methodology assumes. Ironically, Donaho highlights Ha=
+dley Wickham=E2=80=99s <b>plyr</b> package, as rectangular as can be. Argua=
+bly, data science students ought to be exposed more to sophisticated use of=
+ R=E2=80=99s <b>tapply()</b>, for instance.</p>
+<p dir=3D"ltr">Now turning to the stat aspect of Data Science, a key theme =
+in the essay is, to borrow from Marie Davidian, aren=E2=80=99t WE (statisti=
+cs people) Data Science? Donaho does an excellent job here of saying the an=
+swer is Yes (or if not completely Yes, close enough so that the answer coul=
+d be Yes with a little work). I particularly liked this gem:</p>
+<p dir=3D"ltr">It is striking how, when I review a presentation on today=E2=
+=80=99s data science, in which statistics is superficially given pretty sho=
+rt shrift, I can=E2=80=99t avoid noticing that the underlying tools, exampl=
+es, and ideas which are being taught as data science were all literally inv=
+ented by someone trained in Ph.D. statistics, and in many cases the actual =
+software being used was developed by someone with an MA or Ph.D. in statist=
+ics. The accumulated efforts of statisticians over centuries are just too o=
+verwhelming to be papered over completely, and can=E2=80=99t be hidden in t=
+he teaching, research, and exercise of Data Science.</p>
+<p dir=3D"ltr">Yes! Not only does it succinctly show that there is indeed v=
+alue to theory, but also it illustrates that point that many statisticians =
+are not computer wimps after all. Who needs data science? </p>
+<p dir=3D"ltr">I believe that Donaho, citing Leo Breiman, is too quick to c=
+oncede the prediction field to Machine Learning. As we all know, prediction=
+ has been part of Statistics since its inception, literally for centuries. =
+Granted, modern math stat has an exquisitely developed theory of estimation=
+, but I have seen too many Machine Learning people make the absurd statemen=
+t, =E2=80=9CML is different from statistics, because we do prediction.=E2=
+=80=9D</p>
+<p dir=3D"ltr">Indeed, one of Donaho=E2=80=99s most salient points is that =
+having MORE methods available for prediction is not the same as doing BETTE=
+R prediction. Indeed, he shows the results of some experiments he conducted=
+ with Jiashun Jin on some standard real data sets, in which a very simple p=
+redictor is compared to various =E2=80=9Cfancy=E2=80=9D ones:</p>
+<p dir=3D"ltr">Boosting, Random Forests and so on are dramatically more com=
+plex and have correspondingly higher charisma in the Machine Learning commu=
+nity. But against a series of pre-existing benchmarks developed in the Mach=
+ine Learning community, the charismatic methods do not outperform the homel=
+iest of procedures=E2=80=A6</p>
+<p dir=3D"ltr">This would certainly be a shock to most students in ML cours=
+es =E2=80=94 and to some of their instructors.</p>
+<p dir=3D"ltr">Maybe the =E2=80=9CR people=E2=80=9D (i.e. Stat Departments)=
+ have as much to contribute to data science as the =E2=80=9CPython people=
+=E2=80=9D (CS) after all.</p>
+<p dir=3D"ltr">To <b>leave a comment</b> for the author, please follow the =
+link and comment on their blog: <a href=3D"https://matloff.wordpress.com/20=
+16/01/23/some-comments-on-donahos-50-years-of-data-science/"><b>Mad (Data) =
+Scientist</b></a>.</p>
+<p dir=3D"ltr"><a href=3D"http://www.r-bloggers.com/">R-bloggers.com</a> of=
+fers <a href=3D"http://feedburner.google.com/fb/a/mailverify?uri=3DRBlogger=
+s"><b>daily e-mail updates</b></a> about <a href=3D"http://www.r-project.or=
+g/">R</a> news and <a href=3D"http://www.r-bloggers.com/?s=3Dtutorial">tuto=
+rials</a> on topics such as: <a href=3D"http://www.r-bloggers.com/?s=3Ddata=
+%20science">Data science</a>, <a href=3D"http://www.r-bloggers.com/?s=3DBig=
+%20Data">Big Data, </a><a href=3D"http://www.r-users.com/">R jobs</a>, visu=
+alization (<a href=3D"http://www.r-bloggers.com/?s=3Dggplot2">ggplot2</a>, =
+<a href=3D"http://www.r-bloggers.com/?s=3Dboxplot">Boxplots</a>, <a href=3D=
+"http://www.r-bloggers.com/?s=3Dmap">maps</a>, <a href=3D"http://www.r-blog=
+gers.com/?s=3Danimation">animation</a>), programming (<a href=3D"http://www=
+.r-bloggers.com/?s=3DRStudio">RStudio</a>, <a href=3D"http://www.r-bloggers=
+.com/?s=3Dsweave">Sweave</a>, <a href=3D"http://www.r-bloggers.com/?s=3DLaT=
+eX">LaTeX</a>, <a href=3D"http://www.r-bloggers.com/?s=3DSQL">SQL</a>, <a h=
+ref=3D"http://www.r-bloggers.com/?s=3Declipse">Eclipse</a>, <a href=3D"http=
+://www.r-bloggers.com/?s=3Dgit">git</a>, <a href=3D"http://www.r-bloggers.c=
+om/?s=3Dhadoop">hadoop</a>, <a href=3D"http://www.r-bloggers.com/?s=3DWeb&#=
+43;Scraping">Web Scraping</a>) statistics (<a href=3D"http://www.r-bloggers=
+.com/?s=3Dregression">regression</a>, <a href=3D"http://www.r-bloggers.com/=
+?s=3DPCA">PCA</a>, <a href=3D"http://www.r-bloggers.com/?s=3Dtime&#43;serie=
+s">time series</a>, <a href=3D"http://www.r-bloggers.com/?s=3Dtrading">trad=
+ing</a>) and more... <br></p>
+<p dir=3D"ltr">---- </p>
+<p dir=3D"ltr">Shared via <a href=3D"http://feedly.com"><b>my feedly reader=
+</b></a> </p>
+
+--047d7b2e0f25baeb27052a1a70f7--
