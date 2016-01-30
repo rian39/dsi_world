@@ -10,6 +10,9 @@ Mon Jan 25 09:52:41 GMT 2016
 - Donaho's essay from 2015 has a lot of useful references to other reports and studies of dsi
 
 
+## Sat Jan 30 22:52:36 GMT 2016
+
+- amazing  -- data science africa - http://datascience-africa.org/team/ -- would be really interesting to track this group
 
 # TODO
 - get Abbot's _Chaos of the Disciplines_ and see if relevant
