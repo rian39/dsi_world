@@ -14,12 +14,21 @@ Mon Jan 25 09:52:41 GMT 2016
 
 - amazing  -- data science africa - http://datascience-africa.org/team/ -- would be really interesting to track this group
 
+## Tue Feb  9 11:30:35 GMT 2016
+
+- chat with Sjoerd  on skype; looked at some updates
+- agreed to chat again in mid-late march;
+- discussed some of the recent updates like Donaho -- need to add this again to Zotero 
+- went through folder of spreadsheets and docs on dsis
+
 # TODO
 - get Abbot's _Chaos of the Disciplines_ and see if relevant
 - get Thrift's _Knowing Capitalism_ and check main argument
-- read Leydesdorff and makes notes on main argument
+- read Leydesdorff and makes notes on main argument "Decomposing social and semantic networks in emerging "big data" research" 
 - DONE get text of Donaho article
 - go through Donaho looking for reports and references to use
+- TODO: add Donaho again to zotero
+- TODO: go through the docs on dsis and look at again
 
 
 
