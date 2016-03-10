@@ -39,6 +39,11 @@
     - syngenta and agritech data in europe -- who is the community for this?
     - list of odi certificate https://certificates.theodi.org/en/datasets -- a massive dataset 108M list of certified datasets
 
+
+## Thu Mar 10 14:44:27 UTC 2016
+
+ - found type I and type ii data scientists described -- see Sheffield MSc. Also would be good to connect to different modes of science literature; Novotny, etc. http://www.oralytics.com/2013/03/type-i-and-type-ii-data-scientists.html
+
 # TODO
 - get Abbot's _Chaos of the Disciplines_ and see if relevant
 - get Thrift's _Knowing Capitalism_ and check main argument
