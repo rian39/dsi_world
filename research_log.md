@@ -56,3 +56,12 @@
 
 
 
+
+## Tue 10 Oct 2017 11:22:02 BST
+- reading great blog here https://ironholds.org/arbitrary-things/ on data science and what it is/not  - Oliver Keyes -- 'them' 
+- also many good packages ... e.g. urltools 
+- makes me think of that panel in barcelona I went to, and the presentations I've given using the three circles, and the work I've done in the past on hype cycles, etc. 
+- now that I have scraper working, could start scraping all the urls in the dsi collection. 
+- could also get stats  on diversity and participation. 
+- also Keyes stuff on weblog analysis is very useful
+- also had the idea that data science is a platform knowledge; it seeks knowledge of platforms and knowledge mediated by platforms; and it is vital to the promissory logics of platforms
