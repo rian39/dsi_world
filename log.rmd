@@ -54,9 +54,6 @@
 - TODO: go through the docs on dsis and look at again
 
 
-
-
-
 ## Tue 10 Oct 2017 11:22:02 BST
 - reading great blog here https://ironholds.org/arbitrary-things/ on data science and what it is/not  - Oliver Keyes -- 'them' 
 - also many good packages ... e.g. urltools 
@@ -65,3 +62,7 @@
 - could also get stats  on diversity and participation. 
 - also Keyes stuff on weblog analysis is very useful
 - also had the idea that data science is a platform knowledge; it seeks knowledge of platforms and knowledge mediated by platforms; and it is vital to the promissory logics of platforms
+
+## Mon 22 Jan 2018 13:14:24 GMT
+- got article by Wickham et al on data science -- incorporate into slides?  Got the Donoho_2017 base article in ~/archive/data_science/donoho_2017_50_Years.pdf
+     - suggests that Tukey's account of data analysis is a better way forward; 
